@@ -15,9 +15,13 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Door Portal Tutorial"
+config/name="How get the nodes?"
 run/main_scene="res://scenes/levels/Level1.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Global="*res://Global/Global.gd"
 
 [display]
 

@@ -1,6 +1,6 @@
 extends Area2D
 
-export(PackedScene) var target_scene
+export(String, FILE, "*.tscn,*.scn") var target_scene
 
 func _ready():
 	pass
@@ -15,7 +15,11 @@ func _input(event):
 			get_overlapping_bodies()[0].play_walk_in_animation() # 0 will be our player
 			
 func next_level():
-	var ERR = get_tree().change_scene_to(target_scene)
+	
+	var ERR = get_tree().change_scene(target_scene)
 	
 	if ERR != OK:
 		print("something failed in the door scene")
+		return null
+		
+	Global.last_door_name = name # this door name

@@ -72,7 +72,7 @@ collision_layer = 2
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 23, -28 )
+position = Vector2( -0.215759, -28 )
 texture = ExtResource( 1 )
 vframes = 3
 hframes = 5
@@ -85,5 +85,5 @@ anims/Idle = SubResource( 2 )
 anims/Open = SubResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 23, -29 )
+position = Vector2( 0.0236053, -29.46 )
 shape = SubResource( 4 )
