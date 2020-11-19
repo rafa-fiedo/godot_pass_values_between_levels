@@ -15,9 +15,13 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Door Portal Tutorial"
+config/name="How to pass arguments between levels"
 run/main_scene="res://scenes/levels/Level1.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Global="*res://global/Global.gd"
 
 [display]
 
